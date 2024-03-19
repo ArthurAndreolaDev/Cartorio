@@ -10,6 +10,7 @@ int registro ()
 	char nome [40];
 	char sobrenome [40];
 	char cargo [40];
+    int opcao = 0;
 	
 	printf("Digite usuário a ser cadastrado ");
 	scanf("%s", cpf);
@@ -54,7 +55,12 @@ int registro ()
 	fprintf (file,cargo);
 	fclose (file);
 	
-	system( "pause");	
+	printf("\n deseja cadastrar mais algum usuário? pressione 1 para continuar caso contrário pressione 2 \n\n");
+	scanf ("%d",&opcao);
+	if (opcao == 1)
+	{
+		registro ();
+	}
 	
 }
 
