@@ -12,7 +12,7 @@ int registro ()
 	char cargo [40];
     int opcao = 0;
 	
-	printf("Digite usuário a ser cadastrado ");
+	printf("Digite o CPF a ser cadastrado ");
 	scanf("%s", cpf);
 	
 	strcpy(arquivo, cpf);
@@ -26,7 +26,7 @@ int registro ()
 	fprintf(file, ",");
 	fclose(file);
 	
-	printf("Digite o nome a ser consultado ");
+	printf("Digite o nome a ser cadastrado ");
 	scanf("%s",nome);
 	
 	file = fopen(arquivo, "a");
